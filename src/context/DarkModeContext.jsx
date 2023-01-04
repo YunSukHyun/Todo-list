@@ -8,9 +8,10 @@ export function DarkModeProvider({ children }) {
     setDarkMode(!darkMode);
     updateDarkMode(!darkMode);
   }
+
   useEffect(() => {
     const isDark = localStorage.theme === 'dark' ||
-    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)'). matches);
+    (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
     setDarkMode(isDark);
     updateDarkMode(isDark);
   }, [])

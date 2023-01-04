@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styles from './header.module.css';
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
-import { DarkModeContext, useDarkMode } from '../../context/DarkModeContext';
+import { useDarkMode } from '../../context/DarkModeContext';
 export default function Header({filters, filter, onFilterChange}) {
   const {darkMode, toggleDarkMode} = useDarkMode();
   return (

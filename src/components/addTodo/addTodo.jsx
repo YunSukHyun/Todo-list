@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
-import styles from './addTodoList.module.css';
+import styles from './addTodo.module.css';
 
 export const AddTodo = ({onAdd}) => {
   const [text, setText] = useState('');
